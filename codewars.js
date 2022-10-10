@@ -2,11 +2,19 @@
 //     numbers = numbers.split(" ");
 //     return Math.max(...numbers) + " " + Math.min(...numbers);
 // }
-const alphabet = "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z";
-// console.log(alphabet.indexOf("a"));
-function alphabetPosition(text) {
-    for(var i = 0; i < text.length; ++i){
-        alphabet.indexOf(text[i]);
+//
+function getMiddle(s) {
+    let length = s.length;
+    let halfway = length / 2;
+    const oddOrEven = (length) => length % 2 === 0;
+    if (oddOrEven(length) === true) {
+        // middle two
+        return s.substring(halfway - 1, halfway + 1);
+    } else {
+        // middle one
+        return s.substring(halfway, halfway + 1);
     }
 }
-console.log(alphabetPosition("Hello"));
+// console.log(getMiddle("ccdcc"));
+// console.log(getMiddle("aaabbaaa"));
+//
