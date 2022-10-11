@@ -24,8 +24,10 @@
 // }
 // console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]));
 //
-function abbrevName(name){
-    let space = name.indexOf(" ");
-    return (name.substring(0, 1) + "." + (name.substring(space+1, space+2))).toUpperCase();
-}
+// function abbrevName(name){
+//     let space = name.indexOf(" ");
+//     return (name.substring(0, 1) + "." + (name.substring(space+1, space+2))).toUpperCase();
+// }
 // console.log(abbrevName("kaylee morris"));
+// console.log(abbrevName("joshua mullins"));
+const makeNegative = (num) => num > 0 ? num * -1 : num;
