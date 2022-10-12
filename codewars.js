@@ -30,4 +30,5 @@
 // }
 // console.log(abbrevName("kaylee morris"));
 // console.log(abbrevName("joshua mullins"));
-const makeNegative = (num) => num > 0 ? num * -1 : num;
+// const makeNegative = (num) => num > 0 ? num * -1 : num;
+const check = (a, x) => a.includes(x);
