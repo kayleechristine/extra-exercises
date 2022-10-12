@@ -49,7 +49,13 @@
 //
 // * Find Opposite *
 //
-const opposite = (number) => -number;
-console.log(opposite(1));
-console.log(opposite(0));
-console.log(opposite(-12525220.3325));
+// const opposite = (number) => -number;
+// console.log(opposite(1));
+// console.log(opposite(0));
+// console.log(opposite(-12525220.3325));
+//
+// * Grasshopper - Personalized Greeting *
+//
+const greet = (name, owner) => name === owner ? "Hello boss" : "Hello guest";
+console.log(greet("Kaylee", "Kaylee"));
+console.log(greet("Joshua", "Kaylee"));
