@@ -57,5 +57,23 @@
 // * Grasshopper - Personalized Greeting *
 //
 const greet = (name, owner) => name === owner ? "Hello boss" : "Hello guest";
-console.log(greet("Kaylee", "Kaylee"));
-console.log(greet("Joshua", "Kaylee"));
+// console.log(greet("Kaylee", "Kaylee"));
+// console.log(greet("Joshua", "Kaylee"));
+//
+// * Convert Number to Reversed Array of Digits *
+//
+// function digitize(n) {
+//     n.toString().split("").reverse();
+// }
+//
+// console.log(digitize(12345));
+
+function spookyTime(starbucks) {
+    if (starbucks.includes("pumpkin spice latte") === true) {
+        return "spooky szn";
+    } else {
+        return false;
+    }
+}
+
+console.log(spookyTime("pumpkin spice latte"));
