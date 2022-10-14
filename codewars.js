@@ -1,9 +1,13 @@
 // * High and Low *
 //
-// function highAndLow(numbers) {
-//     numbers = numbers.split(" ");
-//     return Math.max(...numbers) + " " + Math.min(...numbers);
-// }
+function highAndLow(numbers) {
+    numbers = numbers.split(" ");
+    return Math.max(...numbers) + " " + Math.min(...numbers);
+}
+
+// let numbers = ("1 2 3 4 5");
+// console.log(highAndLow(numbers));
+
 //
 // * Get the Middle Character *
 //
