@@ -159,11 +159,13 @@ const removeChar = (str) => str.substring(1, str.length - 1);
 
 // console.log(removeChar('hello'));
 
-// * Hello World // *
+// * Hello World // * Complete
 
 const greet = (input) => "hello world!";
 
 // console.log(greet());
+
+// * Validate Pin // *
 
 
 
