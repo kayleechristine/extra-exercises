@@ -167,6 +167,25 @@ const greet = (input) => "hello world!";
 
 // * Validate Pin // *
 
+// function validatePIN (pin) {
+//     if (!isNaN(pin) && pin >= 0 && !pin.includes('.')) {
+//         return pin.length === 4 || pin.length === 6;
+//     } else {
+//         return false;
+//     }
+// }
+
+function validatePIN (pin) {
+    pin = pin.split('');
+
+    // console.log(pin);
+}
+
+console.log(validatePIN('1234'));
+console.log(validatePIN('heya'));
+console.log(validatePIN('123456'));
+console.log(validatePIN('12345'));
+
 
 
 
