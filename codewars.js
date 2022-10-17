@@ -249,4 +249,22 @@ function grow(x){
     return x.reduce((a, b) => a * b);
 }
 
-console.log(grow([1, 2, 3]) + " --- 6");
+// console.log(grow([1, 2, 3]) + " --- 6");
+
+// * Two to One // * Complete
+
+function longest(str1, str2) {
+    // join the strings & sort
+    let array = str1.concat('', str2).split('').sort();
+    // remove duplicates
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === array[i+1]) {
+            array.splice(i, 1);
+            i--;
+        }
+    }
+    // return as a string
+    return array.join('');
+}
+
+console.log(longest("aretheyhere", "yestheyarehere"));
