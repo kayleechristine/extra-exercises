@@ -1,4 +1,4 @@
-// * High and Low *
+// * High and Low // * Complete
 //
 function highAndLow(numbers) {
     numbers = numbers.split(" ");
@@ -9,7 +9,7 @@ function highAndLow(numbers) {
 // console.log(highAndLow(numbers));
 
 //
-// * Get the Middle Character *
+// * Get the Middle Character // * Complete
 //
 function getMiddle(s) {
     let length = s.length;
@@ -26,7 +26,7 @@ function getMiddle(s) {
 // console.log(getMiddle("ccdcc"));
 // console.log(getMiddle("aaabbaaa"));
 //
-// * A Needle in the Haystack *
+// * A Needle in the Haystack // * Complete
 //
 function findNeedle(haystack) {
     let position = haystack.indexOf("needle");
@@ -34,7 +34,7 @@ function findNeedle(haystack) {
 }
 // console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]));
 //
-// * Abbreviate a Two Word Name *
+// * Abbreviate a Two Word Name // * Complete
 //
 function abbrevName(name){
     let space = name.indexOf(" ");
@@ -43,34 +43,36 @@ function abbrevName(name){
 // console.log(abbrevName("kaylee morris"));
 // console.log(abbrevName("joshua mullins"));
 //
-// * Return Negative *
+// * Return Negative // * Complete
 //
 const makeNegative = (num) => num > 0 ? num * -1 : num;
 //
-// * You Only Need One *
+// * You Only Need One * Complete
 //
 const check = (a, x) => a.includes(x);
 //
-// * Find Opposite *
+// * Find Opposite // * Complete
 //
 const opposite = (number) => -number;
 // console.log(opposite(1));
 // console.log(opposite(0));
 // console.log(opposite(-12525220.3325));
 //
-// * Grasshopper - Personalized Greeting *
+// * Grasshopper - Personalized Greeting // * Complete
 //
-// const greet = (name, owner) => name === owner ? "Hello boss" : "Hello guest";
-// console.log(greet("Kaylee", "Kaylee"));
-// console.log(greet("Joshua", "Kaylee"));
+const greetMe = (name, owner) => name === owner ? "Hello boss" : "Hello guest";
+// console.log(greetMe("Kaylee", "Kaylee"));
+// console.log(greetMe("Joshua", "Kaylee"));
 //
-// * Convert Number to Reversed Array of Digits *
+// * Convert Number to Reversed Array of Digits // * Complete
 //
 function digitize(n) {
     n.toString().split("").reverse();
 }
 //
 // console.log(digitize(12345));
+
+// * For Fun - Spooky Szn // * Complete
 
 function spookyTime(starbucks) {
     if (starbucks.includes("pumpkin spice latte") === true) {
@@ -82,7 +84,7 @@ function spookyTime(starbucks) {
 
 // console.log(spookyTime("pumpkin spice latte"));
 
-// * Find Average *
+// * Find Average // * Complete
 
 // let array = [];
 
@@ -102,7 +104,7 @@ function findAverage(array) {
 //
 // console.log(findAverage(array));
 
-// * Count Sheep *
+// * Count Sheep // * Complete
 
 let countSheep = function (num){
     let sheep = "";
@@ -126,13 +128,13 @@ let countSheep = function (num){
 
 // * Exes and Ohs // * Complete
 
-// function XO(str) {
-//     str = str.toUpperCase();
-//     let strCount = str.length;
-//     let xCount = strCount - (str.replace(/X/g, '').length);
-//     let oCount = strCount - (str.replace(/O/g, '').length);
-//     return xCount === oCount;
-// }
+function XO(str) {
+    str = str.toUpperCase();
+    let strCount = str.length;
+    let xCount = strCount - (str.replace(/X/g, '').length);
+    let oCount = strCount - (str.replace(/O/g, '').length);
+    return xCount === oCount;
+}
 //
 // console.log(XO('XO'));
 // console.log(XO('XOXOXO'));
@@ -197,10 +199,6 @@ function isTriangle(a,b,c) {
 
 // * Sum of Positive // * Complete
 
-// function isPositive(arr) {
-//     return arr.map(num => num >= 0);
-// }
-
 // function positiveSum(arr) {
 //     // remove negative
 //     arr = arr.filter(num => num >= 0);
@@ -235,6 +233,15 @@ const reverseSeq = (n) => {
 
 // *
 
+function filter_list(arr) {
+    // return arr.filter(num => typeof num !== 'string' && num >= 0);
+    // return arr.filter(num => /^(\d)$/ && num >= 0);
+    let result = arr.filter(num => [0-9] && num >= 0);
+    return result.map(num => num.keys());
+    // return "[ " + arr.filter(num => [0-9] && num >= 0) + " ]";
+    // return arr.map(num => num.includes(\^(/w)$\);
+}
 
+console.log(filter_list([1,2,"aasf","1","123",123]) + " expected [ 1, 2, '1', '123', 123 ]");
 
 
