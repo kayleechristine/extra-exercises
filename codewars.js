@@ -267,4 +267,21 @@ function longest(str1, str2) {
     return array.join('');
 }
 
-console.log(longest("aretheyhere", "yestheyarehere"));
+// console.log(longest("aretheyhere", "yestheyarehere"));
+
+// * Basic Mathematical Operations // * Complete
+
+function basicOp(operation, value1, value2) {
+    switch(operation) {
+        case "+":
+            return value1 + value2;
+        case "-":
+            return value1 - value2;
+        case "*":
+            return value1 * value2;
+        case "/":
+            return value1 / value2;
+        default:
+            return 0;
+    }
+}
