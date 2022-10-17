@@ -60,7 +60,7 @@ const opposite = (number) => -number;
 //
 // * Grasshopper - Personalized Greeting *
 //
-const greet = (name, owner) => name === owner ? "Hello boss" : "Hello guest";
+// const greet = (name, owner) => name === owner ? "Hello boss" : "Hello guest";
 // console.log(greet("Kaylee", "Kaylee"));
 // console.log(greet("Joshua", "Kaylee"));
 //
@@ -149,7 +149,7 @@ function paperwork(n, m) {
     }
 }
 
-// * Remove First and Last Character // *
+// * Remove First and Last Character // * Complete
 
 // function removeChar(str){
 //     return str.substring(1, str.length - 1);
@@ -157,8 +157,13 @@ function paperwork(n, m) {
 
 const removeChar = (str) => str.substring(1, str.length - 1);
 
-console.log(removeChar('hello'));
+// console.log(removeChar('hello'));
 
+// * Hello World // *
+
+const greet = (input) => "hello world!";
+
+// console.log(greet());
 
 
 
