@@ -165,28 +165,35 @@ const greet = (input) => "hello world!";
 
 // console.log(greet());
 
-// * Validate Pin // *
+// * Validate Pin // * Complete
 
 // function validatePIN (pin) {
-//     if (!isNaN(pin) && pin >= 0 && !pin.includes('.')) {
-//         return pin.length === 4 || pin.length === 6;
-//     } else {
-//         return false;
-//     }
+//     let isNum = pin.split('').map(num => !isNaN(num) && !num.includes('.') && num >= 0);
+//     let length = pin.length === 4 || pin.length === 6;
+//     let edge = !pin.includes('\n');
+//     return (!isNum.includes(false) && length && edge);
 // }
 
-function validatePIN (pin) {
-    pin = pin.split('');
-
-    // console.log(pin);
+function validatePIN(pin) {
+    return /^(\d{4}|\d{6})$/.test(pin)
 }
 
-console.log(validatePIN('1234'));
-console.log(validatePIN('heya'));
-console.log(validatePIN('123456'));
-console.log(validatePIN('12345'));
+// console.log(validatePIN('1234'));
+// console.log(validatePIN('heya'));
+// console.log(validatePIN('123456'));
+// console.log(validatePIN('12345'));
+// console.log(validatePIN('-12345'));
+// console.log(validatePIN('0.1234'));
+// console.log(validatePIN('123\n'));
 
+// * Is it a Triangle? // * Complete
 
+function isTriangle(a,b,c) {
+    return (Math.max(a, b, c) < a + b + c - Math.max(a, b, c));
+}
+
+console.log(isTriangle(1, 2, 2));
+console.log(isTriangle(7, 2, 2));
 
 
 
