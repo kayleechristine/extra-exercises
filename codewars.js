@@ -231,7 +231,7 @@ const reverseSeq = (n) => {
 
 // console.log(reverseSeq(5));
 
-// * Sum of Mixed // *
+// * Sum of Mixed // * Complete
 
 function sumMix(x){
     // convert strings to numbers
@@ -239,7 +239,14 @@ function sumMix(x){
     // return the sum
 }
 
-console.log((sumMix([9, 3, '7', '3']) + " answer: 22"));
-console.log((sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]) + " answer: 42"));
-console.log((sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']) + " answer: 41"));
+// console.log((sumMix([9, 3, '7', '3']) + " answer: 22"));
+// console.log((sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]) + " answer: 42"));
+// console.log((sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']) + " answer: 41"));
 
+// * Grow // * Complete
+
+function grow(x){
+    return x.reduce((a, b) => a * b);
+}
+
+console.log(grow([1, 2, 3]) + " --- 6");
