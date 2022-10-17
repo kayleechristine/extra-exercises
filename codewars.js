@@ -114,15 +114,41 @@ let countSheep = function (num){
 
 // console.log(countSheep(3));
 
-// * Jaden Case *
+// * Jaden Case // *
 
-String.prototype.toJadenCase = function (tweet) {
-    tweet = tweet.split(" ");
-    return tweet;
-    // tweet.forEach(function(word) {
-    //     word.toString();
-    // })
-};
+// String.prototype.toJadenCase = function (tweet) {
+//     tweet = tweet.split(" ");
+//     return tweet;
+//     // tweet.forEach(function(word) {
+//     //     word.toString();
+//     // })
+// };
+
+// * Exes and Ohs // * Complete
+
+// function XO(str) {
+//     str = str.toUpperCase();
+//     let strCount = str.length;
+//     let xCount = strCount - (str.replace(/X/g, '').length);
+//     let oCount = strCount - (str.replace(/O/g, '').length);
+//     return xCount === oCount;
+// }
+//
+// console.log(XO('XO'));
+// console.log(XO('XOXOXO'));
+// console.log(XO('XOOO'));
+// console.log(XO('xxxO'));
+
+// * School Paperwork // * Complete
+
+function paperwork(n, m) {
+    if (n < 0 || m < 0) {
+        return 0;
+    } else {
+        return n * m;
+    }
+}
+
 
 
 
