@@ -149,6 +149,16 @@ function paperwork(n, m) {
     }
 }
 
+// * Remove First and Last Character // *
+
+// function removeChar(str){
+//     return str.substring(1, str.length - 1);
+// }
+
+const removeChar = (str) => str.substring(1, str.length - 1);
+
+console.log(removeChar('hello'));
+
 
 
 
