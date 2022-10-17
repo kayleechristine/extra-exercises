@@ -192,8 +192,34 @@ function isTriangle(a,b,c) {
     return (Math.max(a, b, c) < a + b + c - Math.max(a, b, c));
 }
 
-console.log(isTriangle(1, 2, 2));
-console.log(isTriangle(7, 2, 2));
+// console.log(isTriangle(1, 2, 2));
+// console.log(isTriangle(7, 2, 2));
+
+// * Sum of Positive // * Complete
+
+// function isPositive(arr) {
+//     return arr.map(num => num >= 0);
+// }
+
+// function positiveSum(arr) {
+//     // remove negative
+//     arr = arr.filter(num => num >= 0);
+//     // sum of all remaining
+//     let start = 0;
+//     return arr.reduce((sum, add) => sum + add, start);
+// }
+
+function positiveSum(arr) {
+    return arr.filter(num => num >= 0).reduce((sum, add) => sum + add, 0);
+}
+
+// const positiveSum = (arr) => arr.filter(num => num >= 0).reduce((sum, add) => sum + add, 0);
+
+// console.log(positiveSum([1,2,3,4,5]),15);
+// console.log(positiveSum([1,-2,3,4,5]),13);
+// console.log(positiveSum([]),0);
+// console.log(positiveSum([-1,-2,-3,-4,-5]),0);
+// console.log(positiveSum([-1,2,3,4,-5]),9);
 
 
 
