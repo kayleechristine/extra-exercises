@@ -231,17 +231,15 @@ const reverseSeq = (n) => {
 
 // console.log(reverseSeq(5));
 
-// *
+// * Sum of Mixed // *
 
-function filter_list(arr) {
-    // return arr.filter(num => typeof num !== 'string' && num >= 0);
-    // return arr.filter(num => /^(\d)$/ && num >= 0);
-    let result = arr.filter(num => [0-9] && num >= 0);
-    return result.map(num => num.keys());
-    // return "[ " + arr.filter(num => [0-9] && num >= 0) + " ]";
-    // return arr.map(num => num.includes(\^(/w)$\);
+function sumMix(x){
+    // convert strings to numbers
+    return x.map(num => Number(num)).reduce((sum, add) => sum + add, 0);
+    // return the sum
 }
 
-console.log(filter_list([1,2,"aasf","1","123",123]) + " expected [ 1, 2, '1', '123', 123 ]");
-
+console.log((sumMix([9, 3, '7', '3']) + " answer: 22"));
+console.log((sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]) + " answer: 42"));
+console.log((sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2,'0']) + " answer: 41"));
 
