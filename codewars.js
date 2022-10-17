@@ -221,6 +221,19 @@ function positiveSum(arr) {
 // console.log(positiveSum([-1,-2,-3,-4,-5]),0);
 // console.log(positiveSum([-1,2,3,4,-5]),9);
 
+// * Reversed Sequence // * Complete
+
+const reverseSeq = (n) => {
+    let array = [];
+    for (let i = 1; i <= n; i++) {
+        array.unshift(i);
+    }
+    return array;
+};
+
+// console.log(reverseSeq(5));
+
+// *
 
 
 
