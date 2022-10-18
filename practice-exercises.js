@@ -24,3 +24,11 @@ console.log(allIndexesOf(fruits, 'guava'));
 console.log(allIndexesOf(fruits, 'pineapple'));
 
 /* ########################################################################## */
+
+/* Define a function named removeAll(array, value) that takes in two arguments.
+* The first argument should be an array and the second argument should be a value
+* you wish to remove. */
+
+function removeAll(array, value) {
+    // loop to remove all items
+}
