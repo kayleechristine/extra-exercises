@@ -30,5 +30,15 @@ console.log(allIndexesOf(fruits, 'pineapple'));
 * you wish to remove. */
 
 function removeAll(array, value) {
-    // loop to remove all items
+    // set condition
+    while (fruits.includes(value)) {
+        let index = fruits.indexOf(value);
+        array.splice(index, 1);
+    }
+    // console.log(index);
+    // array.slice(index, 1);
+    return array;
 }
+
+console.log(removeAll(fruits, "pineapple"));
+console.log(removeAll(fruits, "apple"));
