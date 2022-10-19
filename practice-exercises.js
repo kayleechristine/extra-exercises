@@ -156,10 +156,16 @@ function listOfRollsFromDieFunc(numberOfRolls, diceFunction) {
 
 /* Write a function named first() that returns only the first element of an array */
 
-function first(array) {
-    return array[0];
-}
-
 let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-console.log(first(months));
 
+const first = (array) => array[0];
+
+// console.log(first(months));
+
+/* ########################################################################## */
+
+/* Write a function named secondToLast() that returns the second to last element */
+
+const secondToLast = (array) => array[array.length -2];
+
+console.log(secondToLast(months));
