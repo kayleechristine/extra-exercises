@@ -148,6 +148,18 @@ function listOfRollsFromDieFunc(numberOfRolls, diceFunction) {
     } return array;
 }
 
-console.log(listOfRollsFromDieFunc(1, tetrahedron));
-console.log(listOfRollsFromDieFunc(3, rollDie));
-console.log(listOfRollsFromDieFunc(5, twelveSidedDie));
+// console.log(listOfRollsFromDieFunc(1, tetrahedron));
+// console.log(listOfRollsFromDieFunc(3, rollDie));
+// console.log(listOfRollsFromDieFunc(5, twelveSidedDie));
+
+/* ########################################################################## */
+
+/* Write a function named first() that returns only the first element of an array */
+
+function first(array) {
+    return array[0];
+}
+
+let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+console.log(first(months));
+
