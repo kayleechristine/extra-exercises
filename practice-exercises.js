@@ -30,15 +30,27 @@ console.log(allIndexesOf(fruits, 'pineapple'));
 * you wish to remove. */
 
 function removeAll(array, value) {
-    // set condition
+    // set condition and remove input
     while (fruits.includes(value)) {
         let index = fruits.indexOf(value);
         array.splice(index, 1);
     }
-    // console.log(index);
-    // array.slice(index, 1);
+    // return modified array
     return array;
 }
 
-console.log(removeAll(fruits, "pineapple"));
-console.log(removeAll(fruits, "apple"));
+// console.log(removeAll(fruits, "pineapple"));
+// console.log(removeAll(fruits, "apple"));
+
+/* ########################################################################## */
+
+/* Make a function called randomIntBetween(min, max) that returns a random number
+* between the min and the max. */
+
+function randomIntBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+// console.log(randomIntBetween(10, 20));
+// console.log(randomIntBetween(50, 100));
+// console.log(randomIntBetween(1, 4));
