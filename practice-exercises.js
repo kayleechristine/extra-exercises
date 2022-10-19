@@ -70,7 +70,7 @@ function coinFlip() {
 
 /* ########################################################################## */
 
-/* Make a function called twoDice() that returns the sum of rolling two six
+/* Make a function called twoDice() that returns the sum of rolling two six -
 * sided dice. */
 
 function twoDice() {
@@ -79,6 +79,33 @@ function twoDice() {
     return `${roll1} + ${roll2} = ${roll1 + roll2}`;
 }
 
-console.log(twoDice());
-console.log(twoDice());
-console.log(twoDice());
+// console.log(twoDice());
+// console.log(twoDice());
+// console.log(twoDice());
+
+/* ########################################################################## */
+
+/* Make a function called twentySidedDie() that returns a random integer between
+* 1 and 20. */
+
+function twentySidedDie() {
+    return randomIntBetween(1, 20);
+}
+
+/* Make a function called twelveSidedDie() that returns a random integer between
+* 1 and 12. */
+
+function twelveSidedDie() {
+    return randomIntBetween(1, 12);
+}
+
+/* Make a function called tetrahedron() that returns a random integer between 1
+ * and 4. */
+
+function tetrahedron() {
+    return randomIntBetween(1, 4);
+}
+
+/* ########################################################################## */
+
+/*  */
