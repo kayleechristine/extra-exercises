@@ -54,3 +54,16 @@ function randomIntBetween(min, max) {
 // console.log(randomIntBetween(10, 20));
 // console.log(randomIntBetween(50, 100));
 // console.log(randomIntBetween(1, 4));
+
+/* ########################################################################## */
+
+/* Make a function called coinFlip() that returns either 0 or 1, randomly. */
+
+function coinFlip() {
+    let flip = randomIntBetween(0, 1);
+    return flip === 1 ? "Heads" : "Tails";
+}
+
+// console.log(coinFlip());
+// console.log(coinFlip());
+// console.log(coinFlip());
