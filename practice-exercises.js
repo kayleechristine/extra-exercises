@@ -106,6 +106,27 @@ function tetrahedron() {
     return randomIntBetween(1, 4);
 }
 
+/* Make a function called rollDie() that returns an integer between 1 and 6. */
+
+function rollDie() {
+    return randomIntBetween(1, 6);
+}
+
 /* ########################################################################## */
 
-/*  */
+/* Make a function called listOfRolls(num) that takes in a number containing how
+* many 6-sided dice rolls you want to make. The listOfRolls function should return
+* an array of that length, where each element of the array is the result of the
+* rollDie function. */
+
+function listOfRolls(num) {
+    let array = [];
+    for (let i = 0; i < num; i++) {
+        let roll = rollDie();
+        array.push(roll);
+    } return array;
+}
+
+console.log(listOfRolls((3)));
+console.log(listOfRolls((4)));
+console.log(listOfRolls((5)));
