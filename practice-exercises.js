@@ -18,10 +18,10 @@ function allIndexesOf(array, input) {
     return result;
 }
 
-let fruits = ["apple", "banana", "orange", "apple", "pineapple"];
-console.log(allIndexesOf(fruits, 'apple'));
-console.log(allIndexesOf(fruits, 'guava'));
-console.log(allIndexesOf(fruits, 'pineapple'));
+// let fruits = ["apple", "banana", "orange", "apple", "pineapple"];
+// console.log(allIndexesOf(fruits, 'apple'));
+// console.log(allIndexesOf(fruits, 'guava'));
+// console.log(allIndexesOf(fruits, 'pineapple'));
 
 /* ########################################################################## */
 
@@ -67,3 +67,18 @@ function coinFlip() {
 // console.log(coinFlip());
 // console.log(coinFlip());
 // console.log(coinFlip());
+
+/* ########################################################################## */
+
+/* Make a function called twoDice() that returns the sum of rolling two six
+* sided dice. */
+
+function twoDice() {
+    let roll1 = randomIntBetween(1, 6);
+    let roll2 = randomIntBetween(1, 6);
+    return `${roll1} + ${roll2} = ${roll1 + roll2}`;
+}
+
+console.log(twoDice());
+console.log(twoDice());
+console.log(twoDice());
