@@ -127,6 +127,27 @@ function listOfRolls(num) {
     } return array;
 }
 
-console.log(listOfRolls((3)));
-console.log(listOfRolls((4)));
-console.log(listOfRolls((5)));
+// console.log(listOfRolls((3)));
+// console.log(listOfRolls((4)));
+// console.log(listOfRolls((5)));
+
+/* ########################################################################## */
+
+/* Make a function called listOfRollsFromDieFunc(numberOfRolls, diceFunction)
+* The first argument is the number of rolls you want to make. The second argument
+* is a function that contains the function definition for the type of die you want
+* to roll. For example, if we call listOfDieRollsFromDieFunc(1, tetrahedron), then
+* the function will return an array containing one value that is the result of
+* calling the tetrahedron function. */
+
+function listOfRollsFromDieFunc(numberOfRolls, diceFunction) {
+    let array = [];
+    for (let i = 0; i < numberOfRolls; i++) {
+        let roll = diceFunction();
+        array.push(roll);
+    } return array;
+}
+
+console.log(listOfRollsFromDieFunc(1, tetrahedron));
+console.log(listOfRollsFromDieFunc(3, rollDie));
+console.log(listOfRollsFromDieFunc(5, twelveSidedDie));
