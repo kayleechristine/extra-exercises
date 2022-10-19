@@ -168,4 +168,17 @@ const first = (array) => array[0];
 
 const secondToLast = (array) => array[array.length -2];
 
-console.log(secondToLast(months));
+// console.log(secondToLast(months));
+
+/* ########################################################################## */
+
+/* Write a function named rest() that takes an array and returns an array
+* containing everything except the first element. */
+
+function rest(array) {
+    array.pop();
+    array.shift();
+    return array;
+}
+
+console.log(rest(months));
