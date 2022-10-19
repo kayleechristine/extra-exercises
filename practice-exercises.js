@@ -181,4 +181,10 @@ function rest(array) {
     return array;
 }
 
-console.log(rest(months));
+// console.log(rest(months));
+
+/* ########################################################################## */
+
+/* Write a function named getLongestString that takes in an array of strings and
+* returns the longest string of that array */
+
