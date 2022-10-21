@@ -188,3 +188,18 @@ function rest(array) {
 /* Write a function named getLongestString that takes in an array of strings and
 * returns the longest string of that array */
 
+function getLongestString(array) {
+    let stringLength = [];
+    array.forEach(i => {
+        stringLength.push(i.length);
+    })
+    let longest = Math.max(...stringLength);
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length === longest) {
+            return array[i];
+        }
+    }
+}
+
+console.log(getLongestString(["hello", "hey", "hi"]));
+console.log(getLongestString(["hello", "heyyyyy", "hi"]));
