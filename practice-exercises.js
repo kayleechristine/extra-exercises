@@ -189,11 +189,14 @@ function rest(array) {
 * returns the longest string of that array */
 
 function getLongestString(array) {
+    // find length of each string in the array
     let stringLength = [];
     array.forEach(i => {
         stringLength.push(i.length);
     })
+    // find which is the longest
     let longest = Math.max(...stringLength);
+    // find longest string and return it
     for (let i = 0; i < array.length; i++) {
         if (array[i].length === longest) {
             return array[i];
@@ -201,5 +204,46 @@ function getLongestString(array) {
     }
 }
 
-console.log(getLongestString(["hello", "hey", "hi"]));
-console.log(getLongestString(["hello", "heyyyyy", "hi"]));
+// console.log(getLongestString(["hello", "hey", "hi"]));
+// console.log(getLongestString(["hello", "heyyyyy", "hi"]));
+
+/* ########################################################################## */
+
+/* Write a function named getShortestString that takes in an array of strings
+* and returns the shortest string in that array. */
+
+function getShortestString(array) {
+    // find length of each string in the array
+    let stringLength = [];
+    array.forEach(i => {
+        stringLength.push(i.length);
+    })
+    // find which is the shortest
+    let shortest = Math.min(...stringLength);
+    // find shortest string and return it
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length === shortest) {
+            return array[i];
+        }
+    }
+}
+
+// console.log(getShortestString(["hello", "hey", "hi"]));
+// console.log(getShortestString(["hello", "heyyyyy", "hi"]));
+
+/* ########################################################################## */
+
+/* Write a function named addTwoArrays that takes in two, one dimensional arrays.
+* The function should return a single array containing all the elements of the
+* first array along with all the elements of the second array
+* Example: addTwoArrays([1, 2, 3], [4, 5, 6]) should return [1, 2, 3, 4, 5, 6] */
+
+// function addTwoArrays(array1, array2) {
+//     let both = array1.join('').concat(array2.join(''));
+//     return both.split('');
+// }
+
+const addTwoArrays = (first, second) =>
+    (first.join('').concat(second.join(''))).split('');
+
+console.log(addTwoArrays([1, 2, 3], [4, 5, 6]));
