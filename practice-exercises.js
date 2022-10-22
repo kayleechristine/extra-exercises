@@ -265,5 +265,24 @@ function getUniqueValues(array) {
     return unique;
 }
 
-console.log(getUniqueValues(["a", "b", "a", "b", "c", "c"]))
+// console.log(getUniqueValues(["a", "b", "a", "b", "c", "c"]))
+
+/* ########################################################################## */
+
+/* Write a function named reverseArray that takes in an array and returns it
+* reversed, but without altering the original array. */
+
+let numbers = ["1", "2", "3"]
+
+function reverseArray(array) {
+    let reversed = [];
+    for (let i = 0; i < array.length; i++) {
+            reversed.unshift(array[i]);
+    }
+    return reversed;
+}
+
+console.log(reverseArray(numbers));
+console.log(numbers);
+
 
