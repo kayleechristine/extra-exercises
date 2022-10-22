@@ -246,7 +246,7 @@ function getShortestString(array) {
 const addTwoArrays = (first, second) =>
     (first.join('').concat(second.join(''))).split('');
 
-console.log(addTwoArrays([1, 2, 3], [4, 5, 6]));
+// console.log(addTwoArrays([1, 2, 3], [4, 5, 6]));
 
 /* ########################################################################## */
 
@@ -254,5 +254,16 @@ console.log(addTwoArrays([1, 2, 3], [4, 5, 6]));
 * array without any duplicates.
 // Example: getUniqueValues(["a", "b", "a", "b", "c", "c"]) should return ["a", "b", "c"] */
 
+function getUniqueValues(array) {
+    let unique = [];
+    for (let i = 0; i < array.length; i++) {
+        let num = array[i];
+        if (!unique.includes(num)) {
+            unique.push(num);
+        }
+    }
+    return unique;
+}
 
+console.log(getUniqueValues(["a", "b", "a", "b", "c", "c"]))
 
