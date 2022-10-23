@@ -4,8 +4,10 @@
     margin: .5em;
     border-radius: 8px;
     background: white;
-    width: 250px;
-    height: 350px;
+    position: center;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
 /*@-webkit-keyframes shadow-pop-tr {*/
 /*    0% {*/
