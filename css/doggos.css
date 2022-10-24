@@ -22,10 +22,11 @@ h1 {
 #btnClick {
     width: 500px;
     height: 30px;
-    background: #333333;
+    background: #0fb784;
+    color: #dddddd;
+    border: 1px solid lightgrey;
     border-radius: 8px;
-    color: #aaaaaa;
-    margin: .5em auto;
+    margin: auto;
 }
 input {
     accent-color: #ba9d37;
