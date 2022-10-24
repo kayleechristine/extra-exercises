@@ -1,15 +1,23 @@
+h1 {
+    color: blue;
+}
 #dog-pic {
     margin: .5em;
     border-radius: 8px;
     background: white;
-    position: center;
     width: 500px;
     height: 500px;
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #logo {
     height: 100px;
     width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #btnClick {
     position: center;
@@ -21,9 +29,6 @@
     color: #aaaaaa;
 }
 .main {
-    position: center;
-}
-.h1 {
     position: center;
 }
 input {
