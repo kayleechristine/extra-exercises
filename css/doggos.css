@@ -1,5 +1,28 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: #0fb784;
+    color: white;
+    box-shadow: none;
+}
+#logo {
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    margin-left: 5px;
+}
 h1 {
-    color: blue;
+    color: white;
+    position: fixed;
+    left: 70px;
+    top: -10px;
+}
+body {
+    position: relative;
+    top: 60px;
 }
 #dog-pic {
     border-radius: 8px;
@@ -12,13 +35,6 @@ h1 {
     align-items: center;
     margin: .5em auto;
 }
-#logo {
-    height: 100px;
-    width: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 #btnClick {
     width: 500px;
     height: 30px;
@@ -26,11 +42,6 @@ h1 {
     color: #dddddd;
     border: 1px solid lightgrey;
     border-radius: 8px;
-    margin: auto;
-}
-input {
-    accent-color: #ba9d37;
-    display: block;
-    width: 30px;
-    height: 30px;
+    position: relative;
+    margin-left: 455px;
 }
