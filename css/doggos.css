@@ -1,4 +1,4 @@
-#image {
+#dog-pic {
     margin: .5em;
     border-radius: 8px;
     background: white;
@@ -6,4 +6,29 @@
     width: 500px;
     height: 500px;
     object-fit: cover;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+}
+#btnClick {
+    position: center;
+    width: 500px;
+    height: 30px;
+    background: #333333;
+    border-radius: 8px;
+    margin: .5em;
+    color: #aaaaaa;
+}
+.main {
+    position: center;
+}
+.h1 {
+    position: center;
+}
+input {
+    accent-color: #ba9d37;
+    display: block;
+    width: 30px;
+    height: 30px;
 }

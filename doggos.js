@@ -1,5 +1,5 @@
 let btn = document.getElementById('btnClick');
-let image = document.getElementById('image');
+let image = document.getElementById('dog-pic');
 
 btn.addEventListener('click', function() {
     fetch("https://dog.ceo/api/breeds/image/random")
