@@ -2,7 +2,6 @@ h1 {
     color: blue;
 }
 #dog-pic {
-    margin: .5em;
     border-radius: 8px;
     background: white;
     width: 500px;
@@ -11,6 +10,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: .5em auto;
 }
 #logo {
     height: 100px;
@@ -20,16 +20,12 @@ h1 {
     align-items: center;
 }
 #btnClick {
-    position: center;
     width: 500px;
     height: 30px;
     background: #333333;
     border-radius: 8px;
-    margin: .5em;
     color: #aaaaaa;
-}
-.main {
-    position: center;
+    margin: .5em auto;
 }
 input {
     accent-color: #ba9d37;
