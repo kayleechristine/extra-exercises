@@ -11,14 +11,28 @@
     <h1>Doggo of the Day</h1>
 </header>
 <body>
-    <main>
+    <div class="welcome">
         <p>Welcome to <strong>Doggo of the Day</strong>! Don't forget to <em>boop the snoot</em>!</p>
-        <hr>
+    </div>
+    <div class="random-doggo">
         <img id="dog-pic" alt="random picture of a dog">
         <br>
         <button id="btnClick"><strong>Go fetch!</strong></button>
-        <br>
-    </main>
+    </div>
+    <div class="snoot-boop">
+        <h2>Don't forget to Boop the Snoot!</h2>
+        <form method="POST" action="https://request-inspector.glitch.me/">
+            <label for="guest">Name</label>
+            <input id="guest" name="guest" type="text">
+            <button type="submit">Boop!</button>
+            <br><br>
+            <div class="guest-log">
+                    <p>Kaylee <strong>booped</strong> the <em>snoot</em>!</p>
+                    <p>Joshua <strong>booped</strong> the <em>snoot</em>!</p>
+                    <p>Julia <strong>booped</strong> the <em>snoot</em>!</p>
+            </div>
+        </form>
+    </div>
     <script src="doggos.js"></script>
 </body>
 </html>
