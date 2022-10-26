@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quillsby Books & Tomes</title>
+    <link rel="stylesheet" href="css/bookstore.css">
+</head>
+<body>
+    <div class="top-header">
+    <!-- Nav-bar-->
+        <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    <!-- Website Name-->
+        <h1>Quillsby Books & Tomes</h1>
+    <!-- Search-->
+        <div class="search-bar">
+            <form action="/action_page.php">
+                <input type="text" placeholder="Search..." name="search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+<!--Navigation-->
+    <nav>
+        <ul>
+            <a class="active" href="#browse">Browse</a>
+            <a href="#used">Used</a>
+            <a href="#staffpicks">Staff Picks</a>
+            <a href="#login" class="split">Login</a>
+        </ul>
+    </nav>
+
+    <div class="spotlight">
+    <!--        spotlight items go here-->
+    </div>
+
+
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
+</body>
+</html>
