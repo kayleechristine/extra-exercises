@@ -95,14 +95,15 @@ img {
 .number-text {
     color: #f2f2f2;
     font-size: 12px;
-    padding: 8px 12px;
     position: absolute;
     top: 0;
+    padding: 105px 12px 8px;
+    z-index: 1;
 }
 .dot {
     cursor: pointer;
-    height: 15px;
-    width: 15px;
+    height: 12px;
+    width: 12px;
     margin: 0 2px;
     background-color: #bbb;
     border-radius: 50%;
@@ -160,7 +161,7 @@ img {
     padding: 0.5em;
     background-color: rgba(255, 255, 255, 0.5);
     height: 2em;
-    width: 14em;
+    width: 12em;
     border: none;
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
