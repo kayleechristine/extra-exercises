@@ -1,43 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Quillsby Books & Tomes</title>
+    <title>Flourish & Blotts</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link rel="stylesheet" href="css/bookstore.css">
     <script src="https://kit.fontawesome.com/e8ac724fbe.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e8ac724fbe.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&display=swap');
+    </style>
 </head>
 <body>
+<!--Top Header-->
     <div class="top-header">
-    <!-- Nav-bar-->
+    <!--Nav Button-->
         <div class="container" onclick="myFunction(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
         </div>
-    <!-- Website Name-->
-        <h1>Quillsby Books & Tomes</h1>
-    <!-- Search-->
+    <!--Website Name-->
+        <h1>Flourish & Blotts</h1>
+    <!--Search Bar-->
         <div class="search-bar">
             <form action="/action_page.php">
                 <input type="text" placeholder="Search..." name="search">
-                <button type="submit">Search</button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
     </div>
-<!--Navigation-->
-    <nav>
-        <ul>
-            <a class="active" href="#browse">Browse</a>
-            <a href="#used">Used</a>
-            <a href="#staffpicks">Staff Picks</a>
-            <a href="#login" class="split">Login</a>
-        </ul>
-    </nav>
-
-    <div class="spotlight">
-    <!--        spotlight items go here-->
+<!--Spotlight-->
+<div class="spotlight">
+    <div class="mySlides fade">
+        <div class="number-text">1 / 3</div>
+        <img src="https://miro.medium.com/max/1400/1*Nop3ahndDUVQ6WE6ulxKfQ.png" style="width: 60%" alt="Autumn Books to Read this Fall">
+        <div class="text">Autumn Books to Read in 2022</div>
     </div>
-
-
+    <div class="mySlides fade">
+        <div class="number-text">2 / 3</div>
+        <img src="https://i.insider.com/6149fa5fde0e7b00194b9264?width=1300&format=jpeg&auto=webp" style="width: 60%" alt="Goodreads Hall of Fame">
+        <div class="text">Goodreads Hall of Fame</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="number-text">3 / 3</div>
+        <img src="https://pyxis.nymag.com/v1/imgs/6a9/180/2ada5fb300ce0a253024e048a1fd67af65-best-books-of-year-so-far-october-2022.2x.rhorizontal.w700.jpg" style="width: 60%" alt="Books of the Month: October">
+        <div class="text">Books of the Month: October</div>
+    </div>
+</div>
+<!--Navigation-->
+<!--    <div class="navigation">-->
+<!--        <ul>-->
+<!--            <a class="active" href="#browse">Browse</a>-->
+<!--            <a href="#used">Used</a>-->
+<!--            <a href="#staffpicks">Staff Picks</a>-->
+<!--            <a href="#login" class="split">Login</a>-->
+<!--        </ul>-->
+<!--    </div>-->
+<!--Nav Button JS-->
     <script>
         function myFunction(x) {
             x.classList.toggle("change");
