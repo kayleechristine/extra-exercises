@@ -37,14 +37,14 @@ body {
     background: top #B7B7A4;
     /*position: relative;*/
     border-radius: 12px;
-    display: flex;
+    /*display: flex;*/
 }
 /* Spotlight Slide Show */
 .spotlight {
     /*margin: 90px 20px 20px 20px;*/
     max-width: 1000px;
     position: relative;
-    padding-top: 90px;
+    padding-top: 100px;
     margin: auto;
     display: flex;
 }
@@ -60,7 +60,7 @@ img {
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 45%;
+    top: 50%;
     width: auto;
     margin-top: 22px;
     padding: 16px;
@@ -81,14 +81,14 @@ img {
 .text {
     position: absolute;
     color: #f2f2f2;
-    font-size: 15px;
-    background: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.70);
     padding: 8px 2px;
-    bottom: 0px;
+    bottom: 0;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     width: calc(100% - 4px);
-    height: 20px;
+    height: 30px;
     text-align: center;
 }
 .number-text {
