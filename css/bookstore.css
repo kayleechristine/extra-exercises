@@ -7,11 +7,14 @@ html {
 h1 {
     z-index: 2;
     color: #f2f2f2;
+    background-color: #c59d47;
+    padding: 2px 12px;
     font-family: 'Playfair Display', serif;
     font-size: 2.5em;
 }
 .top-header {
-    background: #6B705C;
+    /*background: #6B705C;*/
+    background-image: url("https://secure.img1-fg.wfcdn.com/im/97042108/resize-h800-w800%5Ecompr-r85/1861/186155052/Latika+Wallpaper.jpg");
     position: fixed;
     display: flex;
     align-items: center;
@@ -43,14 +46,21 @@ body {
     position: relative;
     padding-top: 90px;
     margin: auto;
+    display: flex;
 }
 .mySlides {
     display: none;
 }
+img {
+    border-radius: 8px;
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+}
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 45%;
     width: auto;
     margin-top: 22px;
     padding: 16px;
@@ -69,11 +79,16 @@ body {
     background-color: rgba(0,0,0,0.8);
 }
 .text {
+    position: absolute;
     color: #f2f2f2;
     font-size: 15px;
+    background: rgba(0, 0, 0, 0.5);
     padding: 8px 2px;
-    bottom: 8px;
-    width: 100%;
+    bottom: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: calc(100% - 4px);
+    height: 20px;
     text-align: center;
 }
 .number-text {
@@ -142,6 +157,7 @@ body {
 }
 .search-bar input[type=text] {
     padding: 0.5em;
+    background-color: rgba(255, 255, 255, 0.5);
     height: 2em;
     width: 12em;
     border: none;
