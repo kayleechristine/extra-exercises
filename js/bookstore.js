@@ -1,3 +1,7 @@
+function navAnimation(x) {
+    x.classList.toggle("change");
+}
+
 // let slideIndex = 0;
 // showSlides();
 //
@@ -41,3 +45,31 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+// Tablink Functions
+
+function openPage(pageName, elmnt, background) {
+    // Hide all elements with class="tabcontent" by default */
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Remove the background color of all tablinks/buttons
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        // tablinks[i].style.backgroundImage = "";
+        tablinks[i].style.backgroundColor = "";
+    }
+
+    // Show the specific tab content
+    document.getElementById(pageName).style.display = "block";
+
+    // Add the specific color to the button used to open the tab content
+    // elmnt.style.backgroundImage = `url('${background}')`;
+    elmnt.style.backgroundColor = background;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

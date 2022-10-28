@@ -13,7 +13,7 @@
 <!--Top Header-->
 <div class="top-header">
     <!--Nav Button-->
-    <div class="container" onclick="myFunction(this)">
+    <div class="container" onclick="navAnimation(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
@@ -23,7 +23,7 @@
     <!--Search Bar-->
     <div class="search-bar">
         <form action="/action_page.php">
-            <input type="text" placeholder="I like big books & I cannot lie..." name="search">
+            <input type="text" placeholder="Search..." name="search">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </form>
     </div>
@@ -48,7 +48,13 @@
     </div>
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="preview-display" style="text-align:right">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 </div>
+
 <br>
 <br>
 <!--Navigation-->
@@ -60,12 +66,42 @@
 <!--            <a href="#login" class="split">Login</a>-->
 <!--        </ul>-->
 <!--    </div>-->
-<!--Nav Button JS-->
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
+<!--Content Tabs-->
+<div class="tablink-container">
+    <button class="tablink" onClick="openPage('BestSellers', this, '#282f53')">Best Sellers</button>
+    <button class="tablink" onClick="openPage('NewReleases', this, '#e09f3e')">New Releases</button>
+    <button class="tablink" onClick="openPage('Fiction', this, '#9e2a2b')">Fiction</button>
+    <button class="tablink" onClick="openPage('Nonfiction', this, '#5f0f40')">Nonfiction</button>
+    <button class="tablink" onClick="openPage('YoungAdult', this, '#3e5641')">Young Adult</button>
+    <button class="tablink" onClick="openPage('Children', this, '#cc5803')">Children's</button>
+</div>
+<!--Content-->
+<div id="BestSellers" class="tabcontent">
+    <h3>Best Sellers</h3>
+    <p>These books are at the top of their charts!</p>
+</div>
+<div id="NewReleases" class="tabcontent">
+    <h3>New Release</h3>
+    <p>Hot off the presses.</p>
+</div>
+<div id="Fiction" class="tabcontent">
+    <h3>Fiction</h3>
+    <p>Dragons & aliens & ghosts, oh my!</p>
+</div>
+<div id="Nonfiction" class="tabcontent">
+    <h3>Nonfiction</h3>
+    <p>These books are the real deal. True story.</p>
+</div>
+<div id="YoungAdult" class="tabcontent">
+    <h3>Young Adult</h3>
+    <p>Looking for a book that has it all? We got you.</p>
+</div>
+<div id="Children" class="tabcontent">
+    <h3>Children's Books</h3>
+    <p>Once upon a time...</p>
+</div>
+
+
     <script src="js/bookstore.js"></script>
 
 </body>

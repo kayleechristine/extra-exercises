@@ -92,13 +92,19 @@ img {
     height: 30px;
     text-align: center;
 }
+.preview-display {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    padding: 0.70em 3em 0.5em;
+}
 .number-text {
     color: #f2f2f2;
     font-size: 12px;
     position: absolute;
     top: 0;
     padding: 105px 12px 8px;
-    z-index: 1;
+    z-index: 0.5;
 }
 .dot {
     cursor: pointer;
@@ -166,3 +172,39 @@ img {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
+/* Tab Content */
+.tablink-container {
+    display: flex;
+}
+.tablink {
+    background-color: #4d5b5e;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 12px 12px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    flex-grow: 1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.tablink:hover {
+    background-color: #636e73;
+}
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+/* Content Area */
+#BestSellers {background-color: #BAA587; border-top: 5px solid #282f53;}
+#NewReleases {background-color: #BAA587; border-top: 5px solid #e09f3e;}
+#Fiction {background-color: #BAA587; border-top: 5px solid #9e2a2b;}
+#Nonfiction {background-color: #BAA587; border-top: 5px solid #5f0f40;}
+#YoungAdult {background-color: #BAA587; border-top: 5px solid #3e5641;}
+#Children {background-color: #BAA587; border-top: 5px solid #cc5803;}
