@@ -181,7 +181,7 @@ img {
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
 }
-/* Tab Content */
+/* Tab Links */
 .tablink-container {
     display: flex;
 }
@@ -202,18 +202,25 @@ img {
 .tablink:hover {
     background-color: #636e73;
 }
+/* Tab Content */
 .tabcontent {
     color: white;
     display: none;
-    padding: 100px 20px;
+    padding: 10px 20px;
     height: 100%;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 }
-/* Content Area */
 #BestSellers {background-color: #3c446b; border-top: 5px solid #282f53;}
 #NewReleases {background-color: #f0b762; border-top: 5px solid #e09f3e;}
 #Fiction {background-color: #b04345; border-top: 5px solid #9e2a2b;}
 #Nonfiction {background-color: #7d295d; border-top: 5px solid #5f0f40;}
 #YoungAdult {background-color: #3e5641; border-top: 5px solid #264a2b;}
 #Children {background-color: #c46f3d; border-top: 5px solid #bd622e;}
+.tabcontent h2 {
+    font-size: 28px;
+    margin: 4px 0;
+}
+.tabcontent p {
+    margin: 0 0 4px 0;
+}
