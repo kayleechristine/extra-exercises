@@ -80,7 +80,7 @@
 <div id="BestSellers" class="tabcontent">
     <h2>Best Sellers</h2>
     <p>These books are at the top of their charts!</p>
-    <div class="books">
+    <div class="book-container">
         <div class="card">
             <img src="https://www.grandcentralpublishing.com/wp-content/uploads/2022/06/9781538719824.jpg?fit=447%2C675" alt="Long Shadows Book Cover" style="width:100%">
         </div>
@@ -116,10 +116,17 @@
 <div id="NewReleases" class="tabcontent">
     <h2>New Releases</h2>
     <p>Hot off the presses.</p>
+    <div class="book-container">
+        <div class="card">
+            <img src="https://covers.openlibrary.org/b/isbn/0803734735-M.jpg">
+        </div>
+        <img id="book-pic" alt="book cover" onload="getBooks()">
+    </div>
 </div>
 <div id="Fiction" class="tabcontent">
     <h2>Fiction</h2>
     <p>Dragons & aliens & ghosts, oh my!</p>
+
 </div>
 <div id="Nonfiction" class="tabcontent">
     <h2>Nonfiction</h2>

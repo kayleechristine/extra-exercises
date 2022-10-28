@@ -110,6 +110,7 @@ body {
     color: #f2f2f2;
     font-size: 12px;
     position: absolute;
+    display: inline;
     top: 0;
     padding: 105px 12px 8px;
     z-index: 0.5;
@@ -226,22 +227,20 @@ body {
     border-bottom: 2px solid white;
 }
 /* Book Cards */
-.books {
+.book-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: self-end;
 }
 .card {
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-    width: 20%;
-    margin-top: 12px;
-    margin-right: 6px;
-    /*display: inline-flex;*/
+    margin: 12px 14px 0 5px;
     text-align: center;
-    font-family: arial;
 }
 .card img {
+    height: 260px;
+    min-width: 176px;
+    object-fit: cover;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }

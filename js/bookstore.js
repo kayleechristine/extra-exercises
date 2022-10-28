@@ -73,3 +73,37 @@ function openPage(pageName, elmnt, background) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// Books
+
+let newReleases = {
+    name: "Bitterblue",
+    img: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646961642i/60588986.jpg",
+    isbn: "0803734735",
+};
+//
+let image = document.getElementById('book-pic');
+console.log(document.getElementById('book-pic'));
+//
+// function getBooks(id) {
+//     let section = document.getElementById(id);
+//     for (let i = 0; i < id.length; i++) {
+//         section.img.URL = id[i].img;
+//     }
+// }
+
+let tab = document.getElementById('NewReleases');
+
+tab.addEventListener('click', function getBooks() {
+    let isbn = newReleases[0].isbn;
+    console.log(newReleases[0].isbn);
+    let result = `covers.openlibrary.org/b/isbn/${isbn}-M.jpg`;
+    return image.src = result.url;
+})
+
+
+
+// var loadFile = function(event) {
+//     var image = document.getElementById('output');
+//     image.src = URL.createObjectURL(event.target.files[0]);
+// };
