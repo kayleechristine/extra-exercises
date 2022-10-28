@@ -190,6 +190,9 @@ img {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
+.tablink:first-child {
+
+}
 .tablink:hover {
     background-color: #636e73;
 }
@@ -202,9 +205,9 @@ img {
     border-bottom-left-radius: 8px;
 }
 /* Content Area */
-#BestSellers {background-color: #BAA587; border-top: 5px solid #282f53;}
-#NewReleases {background-color: #BAA587; border-top: 5px solid #e09f3e;}
-#Fiction {background-color: #BAA587; border-top: 5px solid #9e2a2b;}
-#Nonfiction {background-color: #BAA587; border-top: 5px solid #5f0f40;}
-#YoungAdult {background-color: #BAA587; border-top: 5px solid #3e5641;}
-#Children {background-color: #BAA587; border-top: 5px solid #cc5803;}
+#BestSellers {background-color: #3c446b; border-top: 5px solid #282f53; display: block;}
+#NewReleases {background-color: #f0b762; border-top: 5px solid #e09f3e;}
+#Fiction {background-color: #b04345; border-top: 5px solid #9e2a2b;}
+#Nonfiction {background-color: #7d295d; border-top: 5px solid #5f0f40;}
+#YoungAdult {background-color: #3e5641; border-top: 5px solid #264a2b;}
+#Children {background-color: #c46f3d; border-top: 5px solid #bd622e;}
