@@ -13,7 +13,7 @@ html {
     top: 0;
     left: 0;
 }
-h1 {
+.title {
     z-index: 2;
     color: #f2f2f2;
     background-color: #c59d47;
@@ -61,7 +61,7 @@ body {
 .mySlides {
     display: none;
 }
-img {
+.spotlight img {
     border-radius: 8px;
     width: 1000px;
     height: 500px;
@@ -219,8 +219,40 @@ img {
 #Children {background-color: #c46f3d; border-top: 5px solid #bd622e;}
 .tabcontent h2 {
     font-size: 28px;
-    margin: 4px 0;
+    margin: 2px 0;
 }
 .tabcontent p {
-    margin: 0 0 4px 0;
+    margin: 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid white;
+}
+/* Book Cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+}
+.card img {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.price {
+    color: grey;
+    font-size: 22px;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+.card button:hover {
+    opacity: 0.7;
 }
