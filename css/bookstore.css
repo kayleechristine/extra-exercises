@@ -240,6 +240,7 @@ body {
 .card img {
     height: 260px;
     min-width: 176px;
+    max-width: 176px;
     object-fit: cover;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
