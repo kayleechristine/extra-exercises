@@ -23,7 +23,7 @@ header {
     margin: 0 5px;
 }
 #title {
-    color: white;
+    color: #f6f6f4;
 }
 body {
     position: relative;
@@ -44,6 +44,9 @@ body {
 }
 .random-doggo {
     /* contains the dog picture and the button */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #dog-pic {
     border-radius: 8px;
@@ -55,7 +58,7 @@ body {
     width: 500px;
     height: 40px;
     background: #0fb784;
-    color: #dddddd;
+    color: #f6f6f4;
     font-size: 1.25em;
     border: none;
     border-radius: 8px;
@@ -70,7 +73,7 @@ body {
 #sign-in {
     margin-bottom: 10px;
     background: #24b784;
-    color: white;
+    color: #f6f6f4;
     border-radius: 8px;
 }
 #sign-in>h2 {
@@ -85,6 +88,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 15px;
     width: 400px;
     flex-grow: 1;
 }
