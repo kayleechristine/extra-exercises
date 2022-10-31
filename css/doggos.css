@@ -68,6 +68,7 @@ body {
     height: 550px;
     display: flex;
     flex-direction: column;
+    width: 25%;
 
 }
 #sign-in {
@@ -75,6 +76,7 @@ body {
     background: #24b784;
     color: #f6f6f4;
     border-radius: 8px;
+    width: 100%;
 }
 #sign-in>h2 {
     margin: 10px;
@@ -89,6 +91,6 @@ body {
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0 15px;
-    width: 400px;
+    width: 100%;
     flex-grow: 1;
 }
