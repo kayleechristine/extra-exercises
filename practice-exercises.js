@@ -282,7 +282,121 @@ function reverseArray(array) {
     return reversed;
 }
 
-console.log(reverseArray(numbers));
-console.log(numbers);
+// console.log(reverseArray(numbers));
+// console.log(numbers);
 
+/* ########################################################################## */
 
+/* Create a function named getFirstValue that takes an array containing only
+* numbers and return the first element */
+
+function getFirstValue(array) {
+    return array[0];
+}
+
+// console.log(getFirstValue([1, 2, 3, 4]));
+
+/* ########################################################################## */
+
+/* Create a function named getVoteCount that takes an object as an argument.
+* Given an object containing counts of both upvotes and downvotes, return what
+* vote count should be displayed. This is calculated by subtracting the number of
+* downvotes from upvotes. */
+
+function getVoteCount(object) {
+    return object.upvotes - object.downvotes;
+}
+
+// let votes = {
+//     upvotes: 15,
+//     downvotes: 7
+// };
+//
+// console.log(getVoteCount(votes));
+
+/* ########################################################################## */
+
+/* Define a function named incrementItems that takes in an array, add 1 to every
+* element in the array. */
+
+function incrementItems(array) {
+    return array.map(x => x + 1);
+}
+
+// console.log(incrementItems([1, 2, 3]));
+
+/* ########################################################################## */
+
+/* Create a function named parseArray that takes an array of integers and strings.
+* Convert integers to strings and return the new array. */
+
+function parseArray(array) {
+    let newArray = [];
+    for (let i = 0; i < array.length; i++) {
+        if (typeof(array[i]) === "number") {
+            newArray.push(`${array[i]}`);
+        } else {
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
+
+// console.log(parseArray([1, 2, "hello"]));
+
+/* ########################################################################## */
+
+/* Create a function named newWord that takes a word and returns the new word
+* without including the first character. */
+
+function newWord(word) {
+    return word.split('').slice(1).join('');
+}
+
+// console.log(newWord("Hello"));
+
+/* ########################################################################## */
+
+/* Create a function named doubleChar that takes a string and returns a string
+* in which each character is repeated once. */
+
+function singleChar(string) {
+    let singled = [];
+    for (let i = 0; i < string.length; i++) {
+        if (!singled.includes(string[i])) {
+            singled.push(string[i]);
+        }
+    }
+    return singled.join('');
+}
+
+// console.log(singleChar("hello"));
+
+function doubleChar(string) {
+    let doubled = string.split('');
+    string.split('').forEach(char => doubled.push(char));
+    return doubled.join('');
+}
+
+// console.log(doubleChar("hello"));
+
+/* ########################################################################## */
+
+/* You work for a manufacturer, and have been asked to calculate the total profit
+* made on the sales of a product. You are given an object containing the cost price
+* per unit (in dollars), sell price per unit (in dollars), and the starting
+* inventory. Return the total profit made, rounded to the nearest dollar. */
+
+let productInfo = {
+    costPrice: 20,
+    sellPrice: 40,
+    inventory: 50
+}
+
+function findProfitMargin(numSold) {
+    let totalCost = productInfo.inventory * productInfo.costPrice;
+    let profitMargin = (numSold * productInfo.sellPrice) - totalCost;
+    return `$${profitMargin}`;
+}
+
+// console.log(findProfitMargin(50));
