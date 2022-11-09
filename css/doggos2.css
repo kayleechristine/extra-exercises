@@ -1,0 +1,10 @@
+html {
+    background-color: #f7f5f1;
+}
+h1 {
+    font-size: 26px;
+    margin: 0 auto;
+    /*font-family: 'Leckerli One', cursive;*/
+    font-family: 'Rock Salt', cursive;
+    /*font-family: 'Sedgwick Ave', cursive;*/
+}
