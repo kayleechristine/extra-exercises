@@ -1,5 +1,14 @@
+:root {
+    --hue1: #264653;
+    --hue2: #2A9D8F;
+    --hue3: #E9C46A;
+    --hue4: #F4A261;
+    --hue5: #E76F51;
+}
 html {
     background-color: #f7f5f1;
+    /*font-family: ;*/
+    /*font-size: ;*/
 }
 h1 {
     font-size: 26px;
