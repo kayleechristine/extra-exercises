@@ -1,0 +1,30 @@
+:root {
+    --main: #e35142;
+    --light: #f1f1f1;
+    --dark: #666666;
+}
+body {
+    margin: 0;
+}
+nav {
+    background: var(--main);
+}
+.start {
+    background: var(--main);
+}
+.section-1 {}
+.section-2 {
+    background: var(--light);
+}
+.quote {
+    background: var(--dark);
+}
+h1 {
+    margin: 0;
+}
+ul {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
