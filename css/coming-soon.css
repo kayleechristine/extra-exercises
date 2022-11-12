@@ -11,6 +11,7 @@ body {
     font-weight: normal;
     color: #fff;
     display: flex;
+    width: 100%;
 }
 #logo {
     padding-left: 15px;
@@ -25,9 +26,10 @@ body {
     flex-grow: 1;
     align-self: center;
     justify-self: center;
+    text-shadow: 2px 2px 8px #0c272f;
 }
 #title {
-    font-size: 72px;
+    font-size: 65px;
     font-weight: 400;
     margin: 0.15em;
 }
