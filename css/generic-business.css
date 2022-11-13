@@ -16,6 +16,14 @@ nav {
 .start {
     background: var(--main);
     color: var(--light);
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.start>h1 {
+    font-weight: normal;
+    font-size: 45px;
 }
 .section-1 {
     display: flex;
