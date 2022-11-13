@@ -38,6 +38,16 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
+.content-2 {
+    width: 60%;
+    padding-left: 75px;
+    margin: 0 auto;
+}
+.img-2 {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
 svg {
     width: 200px;
     fill: var(--main);
