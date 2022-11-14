@@ -12,6 +12,12 @@ body {
 nav {
     background: var(--main);
     color: var(--light);
+    display: flex;
+}
+ul {
+    display: flex;
+    list-style-type: none;
+    margin-block: 0;
 }
 .start {
     background: var(--main);
