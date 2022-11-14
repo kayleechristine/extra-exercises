@@ -27,6 +27,9 @@ nav {
 }
 button {
     background-color: black;
+    color: var(--light);
+    border-color: black;
+    padding: 10px 15px;
 }
 .section-1 {
     display: flex;
